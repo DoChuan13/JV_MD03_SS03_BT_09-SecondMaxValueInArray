@@ -2,7 +2,7 @@ package Max2InArray;
 
 import java.util.Scanner;
 
-public class Max2InArray {
+public class MaxInArrayAd {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int size;
@@ -32,9 +32,6 @@ public class Max2InArray {
                 max = arr[i];
                 indexSecond = index;
                 index = i + 1;
-            } else if (arr[i] < max && arr[i] > second) {
-                second = arr[i];
-                indexSecond = i + 1;
             }
         }
         System.out.printf("\nThe first max element in Array is %d, at position %d\n", max, index);
